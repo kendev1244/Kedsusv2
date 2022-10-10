@@ -1,37 +1,18 @@
 # Installation
-> `npm install --save @types/concat-stream`
+> `npm install --save @types/form-data`
 
 # Summary
-This package contains type definitions for concat-stream (https://github.com/maxogden/concat-stream).
+This package contains type definitions for form-data (https://github.com/felixge/node-form-data).
 
 # Details
-Files were exported from https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/concat-stream.
-## [index.d.ts](https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/concat-stream/index.d.ts)
-````ts
-// Type definitions for concat-stream 1.6
-// Project: https://github.com/maxogden/concat-stream
-// Definitions by: Joey Marianer <https://github.com/jmarianer>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+Files were exported from https://www.github.com/DefinitelyTyped/DefinitelyTyped/tree/types-2.0/form-data
 
-/// <reference types="node" />
-
-import { Writable } from "stream";
-
-interface ConcatOpts {
-  encoding?: string | undefined;
-}
-
-declare function concat(cb: (buf: Buffer) => void): Writable;
-declare function concat(opts: ConcatOpts, cb: (buf: Buffer) => void): Writable;
-
-export = concat;
-
-````
-
-### Additional Details
- * Last updated: Tue, 06 Jul 2021 18:05:59 GMT
- * Dependencies: [@types/node](https://npmjs.com/package/@types/node)
- * Global values: none
+Additional Details
+ * Last updated: Tue, 22 Nov 2016 23:38:10 GMT
+ * File structure: ProperModule
+ * Library Dependencies: node
+ * Module Dependencies: stream
+ * Global values: FormData
 
 # Credits
-These definitions were written by [Joey Marianer](https://github.com/jmarianer).
+These definitions were written by Carlos Ballesteros Velasco <https://github.com/soywiz>, Leon Yu <https://github.com/leonyu>.
